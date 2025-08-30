@@ -1,7 +1,11 @@
+let user =  prompt("Please, insert your name!");
+
+
 document.addEventListener("DOMContentLoaded", ()=>{
 
     let watch = setInterval(()=>{
 
+        
         let hours = document.getElementById("hours");
         let minutes =  document.getElementById("minutes");
         let seconds = document.getElementById("seconds");
@@ -19,17 +23,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
         if(s < 10) s = "0" + s;
 
         if(h >= 0 && h < 12){
-            p.innerText = "Good Morning! It's time of breakfast.";
+            p.innerText = "Good Morning, " + user + "!" + " It's time of breakfast.";
             p.style.color = "black";
             total.style.backgroundColor = "rgba(247, 204, 88, 1)";
             img.setAttribute("src", "pexels-shotbyrain-3030459.jpg");
         } else if(h >= 12 && h < 18){
-            p.textContent = "Good Afternoon! It's time to lunch.";
+            p.textContent = "Good Afternoon!" + user + "!" + " It's time to lunch." ;
             p.style.color = "green";
             total.style.backgroundColor = "";
             img.setAttribute("src", "pexels-koolshooters-8530483.jpg");
         } else if(h >=18 && h > 18){
-            p.textContent = "Good Evening! It's time of dinner and after sleep.";
+            p.textContent = "Good Evening!" + user + "!" + " It's time of dinner and after sleep.";
             img.setAttribute("src", "pexels-stefanstefancik-91216.jpg");
             total.style.backgroundColor = "back"
         }
