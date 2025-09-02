@@ -4,10 +4,10 @@ function userInsertion(){
     user = prompt("Insert your name.");
         if(!user){
             alert("Please, insert your name,")
-        else if(isNan(user)){
-            alert("Please, insert your name correctly");
+        else if(!isNaN(user)){
+            alert("Please, insert your name correctly")
         } else {
-            break:
+            break;
         }
     }
     return user;
