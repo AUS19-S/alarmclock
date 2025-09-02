@@ -1,5 +1,18 @@
-let user =  prompt("Please, insert your name!");
-
+function userInsertion(){
+    let user = ";
+        while(true){
+    user = prompt("Insert your name.");
+        if(!user){
+            alert("Please, insert your name,")
+        else if(isNan(user)){
+            alert("Please, insert your name correctly");
+        } else {
+            break:
+        }
+    }
+    return user;
+}
+user = userInsertion();
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
