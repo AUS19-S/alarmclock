@@ -1,5 +1,5 @@
 function userInsertion(){
-    let user = ";
+    let user = "";
         while(true){
     user = prompt("Insert your name.");
         if(!user){
