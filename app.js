@@ -1,4 +1,4 @@
-// User insertion //
+// User insertion // 
 function userInsertion(){
     let user =  "";
     while(true){
