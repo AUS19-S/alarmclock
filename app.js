@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             total.style.backgroundColor = "";
             img.setAttribute("src", "pexels-koolshooters-8530483.jpg");
         } else if(h >=18 && h > 18){
-            p.textContent = "Good Evening, " + user + "!" + " It's time of dinner and after sleep.";
+            p.textContent = "Good Evening, " + user + "!" + " It's time to dinner and after to sleep.";
             img.setAttribute("src", "pexels-stefanstefancik-91216.jpg");
             total.style.backgroundColor = "back"
         }
